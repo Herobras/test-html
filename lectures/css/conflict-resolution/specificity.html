@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Inheritance in CSS</title>
+  <style>
+    /* Most specific selector combination wins */
+    header.navigation p {
+      /* Class = 10, elementos = 2, 12 */
+      color: blue;
+    }
+    /* Class = 10, elementos = 1 */
+    p.blurb {
+      color: red;
+    }
+    /* Elemento = 1, pero !important hace que se pise TODO */
+    p {
+      color: green !important;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navigation">
+    <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero soluta enim aut! Nihil nam
+      obcaecati, fugiat sint sit libero voluptate eos incidunt odio neque cum, dignissimos aperiam, magnam nisi debitis.
+    </p>
+  </header>
+  <div id="name"><a href="../../../index.html" title="Back">click me!</a></div>
+</body>
+
+</html>
