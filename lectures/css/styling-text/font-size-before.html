@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Setting Font Size</title>
-<style>
 
-</style>
+<head>
+  <meta charset="utf-8">
+  <title>Setting Font Size</title>
+  <style>
+    body {
+      font-size: 125%;
+    }
+  </style>
 </head>
+
 <body>
-<div>Regular text</div>
-<div>2em text
-  <div>4em text
-    <div>2em again!</div>
+  <div>Regular text</div>
+  <!-- em's lo q hace es relativo al tamaño ACTUAL mientras que % es respecto a la fuente -->
+  <div style="font-size: 2em;">2em text
+    <div style="font-size: 2em;">4em text
+      <div style="font-size: .5em;">2em again!</div>
+    </div>
   </div>
-</div>
+  <div id="name"><a href="../../../index.html" title="Back">click me!</a></div>
 </body>
+
 </html>
