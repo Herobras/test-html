@@ -5,10 +5,14 @@
   <meta charset="utf-8">
   <title>The Box Model</title>
   <style>
-    body {
+    * {
+      /* Select every element that there is and apply this properties to them  */
+      box-sizing: border-box;
       /* Reset de config default del browser */
       margin: 0;
       padding: 0;
+    }
+    body {
       background-color: gray;
     }
 
@@ -19,9 +23,10 @@
       background-color: blue;
       padding: 10px;
       border: 5px solid black;
-      margin: 40px;
       width: 300px;
-      box-sizing: border-box;
+      height: 50px;
+      margin-top: 50px;
+      overflow: auto;
     }
 
     #content {
@@ -39,9 +44,12 @@
 
   <h1>Box Model</h1>
 
+  <!-- Margins here collapse, so distance between h1 and the div is 30px -->
+
   <div id="box">
-    <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+    <div id="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur, modi nesciunt alias, voluptatibus sunt dolores cupiditate enim itaque voluptatem ut ullam dolore aspernatur dolor error nemo impedit, tempore voluptate. </div>
   </div>
+  <div id="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur, modi nesciunt alias, voluptatibus sunt dolores cupiditate enim itaque voluptatem ut ullam dolore aspernatur dolor error nemo impedit, tempore voluptate. </div>
 
   <div id="name"><a href="../../index.html" title="Back">click me!</a></div>
 </body>
