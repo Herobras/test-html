@@ -1,0 +1,25 @@
+Bootstrap grid system
+
+bootstrap impone una estructura siempre:
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"> Col 1</div>
+      ...
+    </div>
+  </div>
+
+bootstrap div tiene que ir siempre dentro de un container wrapper, que puede ser container or container-fluid. The container fluid class stretches your layout the full width of the browser and provides consistent padding around your grid and other content.  
+
+Regular container class has predetermined fixed width that is still responsive based on the width of the browser. In other words, it has certain width of one break point, a different width at a different break point and so on. Remember that break points are those media range boundaries that we covered in one of the previous lectures.
+
+
+Row class: So the row class creates horizontal groups of columns which means that the columns collapse and interact with each other as a group but independently from columns in another row. The row class also creates a negative margin, to counteract the padding that the container class sets up. Now why is that done? Well, each column already has its own padding because we want to visually separate columns from each other. If negative margin wasn't applied to the row, the padding of the container would then be in addition to the padding of the edge column. So the content of the column will no longer align nicely with the rest of the content outside of the grid. Now the Bootstrap documentation actually talks about this and explains it. But to be honest, I myself stared at it for a while before I finally understood what it's trying to say. So let me put together a quick diagram so you will visually see what we're talking about.
+
+Basicamente row se extiende lo suficiente como para que quede alineado con contenido regular sin clase row
+
+
+Todas las columnas se definen asi : col-SIZE-SPAN
+
+El size es referido al tamaño de la pantalla, md, lg, sm
+Span es cuantas columnas ocupa el elemento
