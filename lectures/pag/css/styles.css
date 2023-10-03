@@ -184,6 +184,41 @@ body {
     opacity: .8;
 }
 
+/* end of home page */
+
+/* Menu page */
+
+.category-tile {
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+
+.category-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.category-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+/* El siguiente hermano div de title */
+#menu-categories-title+div {
+    margin-bottom: 50px;
+}
+
 /* Large devices */
 @media (min-width: 1200px) {
     .container .jumbotron {
@@ -217,6 +252,7 @@ body {
 
 /* XS devices */
 @media (max-width:767px) {
+
     /* Header */
     .navbar-brand {
         padding-top: 10px;
@@ -264,16 +300,19 @@ body {
         letter-spacing: .1em;
         text-transform: uppercase;
     }
+
     /* end header */
 
     /* footer */
-    .panel-footer section{
+    .panel-footer section {
         margin-bottom: 30px;
         text-align: center;
     }
-    .panel-footer section:nth-child(3){
+
+    .panel-footer section:nth-child(3) {
         margin-bottom: 0;
     }
+
     .panel-footer section hr {
         width: 50%;
     }
@@ -308,4 +347,14 @@ body {
         font-size: 6vw;
         /* relative units to viewport, responsive */
     }
+
+    .col-xxs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+    }
+
 }
