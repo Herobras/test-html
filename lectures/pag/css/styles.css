@@ -95,13 +95,53 @@ body {
     margin-top: -30px;
 }
 
+/* Footer */
+
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+}
+
+.panel-footer div.row {
+    margin-bottom: 35px;
+}
+
+#hours,
+#address {
+    line-height: 2;
+}
+
+#hours>span,
+#address>span {
+    font-size: 1.3em;
+}
+
+#address p {
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8;
+}
+
+#testimonials {
+    font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+    margin-top: 25px;
+}
+
 /* HOME PAGE */
-.container .jumbotron{
+.container .jumbotron {
     box-shadow: 0 0 50px #3F0C1F;
     border: 2px solid #3F0C1F;
 }
 
-#menu-tile, #specials-tile, #map-tile {
+#menu-tile,
+#specials-tile,
+#map-tile {
     height: 250px;
     /* Del container */
     width: 100%;
@@ -113,7 +153,9 @@ body {
 }
 
 
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+#menu-tile:hover,
+#specials-tile:hover,
+#map-tile:hover {
     box-shadow: 0 1px 5px 1px #cccccc;
 }
 
@@ -127,7 +169,9 @@ body {
     background-position: center;
 }
 
-#menu-tile span, #specials-tile span, #map-tile span {
+#menu-tile span,
+#specials-tile span,
+#map-tile span {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -156,6 +200,7 @@ body {
         height: 100px;
         margin: 5px 5px 5px 0;
     }
+
     .container .jumbotron {
         background: url('../images/jumbotron_992.jpg') no-repeat;
         height: 558px;
@@ -218,13 +263,15 @@ body {
         letter-spacing: .1em;
         text-transform: uppercase;
     }
+
     .container .jumbotron {
         margin-top: 30px;
         padding: 0;
 
     }
 
-    #menu-tile, #specials-tile {
+    #menu-tile,
+    #specials-tile {
         width: 360px;
         margin: 0 auto 15px;
     }
@@ -232,10 +279,13 @@ body {
 
 /* XXXS devices */
 @media (max-width:479px) {
-    #menu-tile, #specials-tile {
+
+    #menu-tile,
+    #specials-tile {
         width: 280px;
         margin: 0 auto 15px;
     }
+
     .navbar-brand h1 {
         padding-top: 5px;
         font-size: 6vw;
